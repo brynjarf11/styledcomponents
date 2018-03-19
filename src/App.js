@@ -1,11 +1,14 @@
 import React from 'react';
 import Modal from './components/Modal/Modal';
 import ProgressBar from './components/ProgressBar/ProgressBar';
+import NameCard from "./components/NameCard/NameCard";
+import TimePicker from "./components/TimePicker/TimePicker";
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isOpen:false
+            isOpen:false,
+            time: ""
         }
     }
 
@@ -44,6 +47,20 @@ class App extends React.Component {
               animated={true}
               state="danger"
           />
+          <div>
+              <h2>NameCard</h2>
+              <NameCard
+                  name="Þorlákur Lyngmo"
+                  email="thorlakur16@ru.is"
+                  telephone="+354-867-7810"
+                  imageUrl="http://laoblogger.com/images/nicholas-cage-clipart-7.jpg" />
+          </div>
+          <div>
+              <h2>TimePicker</h2>
+              <TimePicker
+                  onTimePick={time => this.setState({ time })}
+                  format={24} />
+          </div>
       </div>
     );
   }

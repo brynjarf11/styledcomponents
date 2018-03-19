@@ -7,7 +7,6 @@ import{modalTitle, modalBody, modalFooter, modal, modalOverlay, modalClose} from
 class Modal extends React.Component {
 
     render() {
-        console.log(this.props);
         if(this.props.isOpen === true) {
             return (
                 <div className={modalOverlay}>

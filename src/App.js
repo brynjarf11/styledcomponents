@@ -61,7 +61,7 @@ class App extends React.Component {
               <h2>TimePicker</h2>
               <TimePicker
                   onTimePick={time => this.setState({ time })}
-                  format={24} />
+                  format={12} />
           </div>
 
           <Row>
@@ -70,18 +70,9 @@ class App extends React.Component {
               <Col size={4}>Column3</Col>
           </Row>
           <Row>
-              <Col>Column1</Col>
-              <Col>Column2</Col>
-              <Col>Column3</Col>
-              <Col>Column4</Col>
-              <Col>Column5</Col>
-              <Col>Column6</Col>
-              <Col>Column7</Col>
-              <Col>Column8</Col>
-              <Col>Column9</Col>
-              <Col>Column10</Col>
-              <Col>Column11</Col>
-              <Col>Column12</Col>
+              <Col size={4}>Column1</Col>
+              <Col size={8}>Column2</Col>
+
 
           </Row>
       </div>

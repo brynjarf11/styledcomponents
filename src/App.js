@@ -3,6 +3,7 @@ import Modal from './components/Modal/Modal';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import NameCard from "./components/NameCard/NameCard";
 import TimePicker from "./components/TimePicker/TimePicker";
+import DatePicker from "./components/DatePicker/DatePicker";
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -60,6 +61,12 @@ class App extends React.Component {
               <TimePicker
                   onTimePick={time => this.setState({ time })}
                   format={24} />
+          </div>
+          <div>
+              <h2>DatePicker</h2>
+              <DatePicker
+                  onDatePick={date => this.setState({ date })}
+                  locale="en-EN" />
           </div>
       </div>
     );

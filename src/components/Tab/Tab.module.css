@@ -1,0 +1,20 @@
+.tab{
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(41,204,200);
+    background: rgb(21,204,192);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    margin: 3px;
+
+
+}
+
+.tab:hover {
+    cursor: pointer;
+    background: rgba(21,204,192,0.5);
+
+}
+

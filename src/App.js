@@ -5,14 +5,19 @@ import NameCard from "./components/NameCard/NameCard";
 import TimePicker from "./components/TimePicker/TimePicker";
 import Row from './components/Row/Row';
 import Col from './components/Column/Col';
+import Tabs from './components/Tabs/Tabs';
+import Styles from './components/Tabs/Tabs.module.css'
+import Tab from "./components/Tab/Tab";
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             isOpen:false,
-            time: ""
+            time: '',
+            tab:''
         }
     }
+
 
   render() {
     return (
@@ -75,6 +80,29 @@ class App extends React.Component {
 
 
           </Row>
+          <div>
+              <h2>Tabs</h2>
+              <Tabs theme='dark' layout='vertical' onSelect={newTab => this.setState({ tab:newTab})}>
+                  <Tab title='Tab 1' selectionKey={1}>
+                  </Tab>
+                  <Tab title='Tab 2'selectionKey={2}>
+                  </Tab>
+                  <Tab title='Tab 3'selectionKey={3}>
+                  </Tab>
+                  <Tab title='Tab 4'selectionKey={4}>
+                  </Tab>
+              </Tabs>
+              <Tabs theme='light' layout='horizontal' onSelect={newTab => this.setState({ tab:newTab})}>
+                  <Tab title='Tab 1'selectionKey={5}>
+                  </Tab>
+                  <Tab title='Tab 2'selectionKey={6}>
+                  </Tab>
+                  <Tab title='Tab 3'selectionKey={7}>
+                  </Tab>
+                  <Tab title='Tab 4'selectionKey={8}>
+                  </Tab>
+              </Tabs>
+          </div>
       </div>
     );
   }

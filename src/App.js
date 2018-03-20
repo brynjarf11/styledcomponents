@@ -9,7 +9,6 @@ import DatePicker from "./components/DatePicker/DatePicker";
 import Row from './components/Row/Row';
 import Col from './components/Column/Col';
 import Tabs from './components/Tabs/Tabs';
-import Styles from './components/Tabs/Tabs.module.css'
 import Tab from "./components/Tab/Tab";
 import CartoonNetworkSpinner from "./components/CartoonNetworkSpinner/CartoonNetworkSpinner";
 class App extends React.Component {

@@ -44,7 +44,7 @@ class Carousel extends React.Component {
         return (
             <div className={styles.myCarousel}>
                 <div className={`${styles.center} ${styles.image} `}>
-                    <img className={styles[this.state.currentSize]} src={this.state.currentImage}/>
+                    <img className={styles[this.state.currentSize]} src={this.state.currentImage} alt=""/>
                 </div>
                 <div className={`${styles.center}`}>
                     <div className={`${styles.arrowLeft} ${["fa fa-arrow-left"]}`} onClick={this.iterateLeft}> </div>

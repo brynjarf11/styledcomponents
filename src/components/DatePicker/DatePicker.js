@@ -56,7 +56,6 @@ class DatePicker extends React.Component {
         }
         else{
             let y = this.state.year;
-            let ans = y%4;
             if(y % 4 === 0){
                 numberOfDays = 27;
             }

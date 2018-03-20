@@ -1,16 +1,6 @@
 import React from 'react';
-import Modal from './components/Modal/Modal';
-import ProgressBar from './components/ProgressBar/ProgressBar';
-import NameCard from "./components/NameCard/NameCard";
-import TimePicker from "./components/TimePicker/TimePicker";
-import Carousel from './components/Carousel/Carousel';
+import { Carousel, CartoonNetworkSpinner, Column, DatePicker, Modal, NameCard, ProgressBar, Row, Tab, Tabs, TimePicker} from "./components";
 
-import DatePicker from "./components/DatePicker/DatePicker";
-import Row from './components/Row/Row';
-import Col from './components/Column/Col';
-import Tabs from './components/Tabs/Tabs';
-import Tab from "./components/Tab/Tab";
-import CartoonNetworkSpinner from "./components/CartoonNetworkSpinner/CartoonNetworkSpinner";
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -89,13 +79,13 @@ class App extends React.Component {
                   locale="en-EN" />
           </div>
           <Row>
-              <Col size={4}>Column1</Col>
-              <Col size={4}>Column2</Col>
-              <Col size={4}>Column3</Col>
+              <Column size={4}>Column1</Column>
+              <Column size={4}>Column2</Column>
+              <Column size={4}>Column3</Column>
           </Row>
           <Row>
-              <Col size={4}>Column1</Col>
-              <Col size={8}>Column2</Col>
+              <Column size={4}>Column1</Column>
+              <Column size={8}>Column2</Column>
           </Row>
           <div>
               <h2>Tabs</h2>

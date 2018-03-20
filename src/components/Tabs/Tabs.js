@@ -10,7 +10,7 @@ class Tabs extends React.Component {
         };
     }
 
-    tabsChanger = (tab) => {
+    tabsChanger(tab) {
         this.setState({currentSelectedTab:tab});
 
     };

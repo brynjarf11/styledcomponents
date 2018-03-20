@@ -77,6 +77,7 @@ class App extends React.Component {
                   ]}
                   size="medium" />
           </div>
+          <div>
               <h2>DatePicker</h2>
               <DatePicker
                   onDatePick={date => this.setState({ date })}

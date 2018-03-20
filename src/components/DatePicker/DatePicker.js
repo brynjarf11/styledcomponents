@@ -57,7 +57,6 @@ class DatePicker extends React.Component {
         else{
             let y = this.state.year;
             let ans = y%4;
-            console.log(ans);
             if(y % 4 === 0){
                 numberOfDays = 27;
             }
@@ -96,7 +95,6 @@ class DatePicker extends React.Component {
         let date = new Date(Date.UTC(y, m_number, d));
 
         date.toLocaleDateString(locale, { timeZone: 'UTC' });
-        console.log(date);
         this.setState({ date: date });
         this.props.onDatePick( date );
     }

@@ -46,12 +46,11 @@ class CartoonNetworkSpinner extends React.Component {
 
     render() {
 
-        console.log(this.state);
         const { image } = this.state;
 
         return(
             <div>
-                <img src={image} className={`${styles.image} ${styles.rotate}`} />
+                <img src={image} className={`${styles.image} ${styles.rotate}`} alt=""/>
             </div>);
     }
 }

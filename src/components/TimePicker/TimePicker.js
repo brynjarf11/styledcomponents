@@ -78,7 +78,6 @@ class TimePicker extends React.Component {
 
     render() {
         const { showHours, showMinutes, hours, minutes, useAM } = this.state;
-        const { format } = this.props.format;
         return (
             <div>
                 <div  className={`${styles.container}`}>

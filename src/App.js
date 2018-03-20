@@ -84,7 +84,7 @@ class App extends React.Component {
           <div>
               <h3>CartoonNetworkSpinner</h3>
               <CartoonNetworkSpinner
-                interval={4} />
+                interval={5} />
           </div>
       </div>
     );

@@ -1,0 +1,53 @@
+.tabsBase {
+    width: auto;
+    height: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    display: flex;
+
+}
+.theme-light {
+    composes: tabsBase;
+    background-color: white;
+    text-decoration-color: black;
+
+}
+
+.theme-dark {
+    composes: tabsBase;
+    background-color: lightgray;
+    text-decoration-color: white;
+
+
+}
+
+.layout-horizontal {
+
+    flex-direction: row;
+
+}
+
+.layout-vertical {
+    flex-direction: column;
+
+
+}
+
+
+.pannel {
+    border: 1px solid black;
+    width: 100%;
+    height: 800px;
+
+
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}

@@ -1,16 +1,18 @@
 import React from 'react';
-import Modal from './components/Modal/Modal';
-import ProgressBar from './components/ProgressBar/ProgressBar';
-import NameCard from "./components/NameCard/NameCard";
-import TimePicker from "./components/TimePicker/TimePicker";
-import Carousel from './components/Carousel/Carousel';
 
-import DatePicker from "./components/DatePicker/DatePicker";
-import Row from './components/Row/Row';
-import Col from './components/Column/Col';
-import Tabs from './components/Tabs/Tabs';
-import Tab from "./components/Tab/Tab";
-import CartoonNetworkSpinner from "./components/CartoonNetworkSpinner/CartoonNetworkSpinner";
+import Modal from './components/Modal';
+import ProgressBar from './components/ProgressBar';
+import NameCard from "./components/NameCard";
+import TimePicker from "./components/TimePicker";
+import Carousel from './components/Carousel';
+
+import DatePicker from "./components/DatePicker";
+import Row from './components/Row';
+import Col from './components/Column';
+import Tabs from './components/Tabs';
+import Tab from "./components/Tab";
+import CartoonNetworkSpinner from "./components/CartoonNetworkSpinner";
+
 class App extends React.Component {
     constructor(props) {
         super(props);

@@ -10,14 +10,15 @@ class Tab extends React.Component {
             tab:1
         }
     }
+    /*
     tabsHandler = () => {
         this.setState({tab:this.props.selectionKey});
         let tabs = this.state.tab;
-        this.props.tabsChanger(tabs);
-    };
+        //this.props.tabsChanger(tabs);
+    };*/
     render() {
         return (
-            <div className={Styles.tab} onClick={this.tabsHandler} >
+            <div className={Styles.tab}  >
                 {this.props.title}
             </div>
         );

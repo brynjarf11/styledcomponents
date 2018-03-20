@@ -3,6 +3,7 @@ import Modal from './components/Modal/Modal';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import NameCard from "./components/NameCard/NameCard";
 import TimePicker from "./components/TimePicker/TimePicker";
+import Carousel from './components/Carousel/Carousel';
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -60,6 +61,17 @@ class App extends React.Component {
               <TimePicker
                   onTimePick={time => this.setState({ time })}
                   format={24} />
+          </div>
+          <div>
+              <h2>Carousel</h2>
+              <Carousel
+                  images={[
+                      'https://i.pinimg.com/236x/fc/7a/b1/fc7ab1608bcedab667a6b1e718e5546b--beautiful-men-beautiful-people.jpg',
+                      'https://pbs.twimg.com/media/Cnbc-ZeVMAAxuTg.jpg',
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc3O0vNCuKIwPe08IuiYWciZkLOB-5_va3fJjxvjrFN7E4jCLLHQ',
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC4LM0motrDIVjSxb3Fd5LfL5kjVlTZWuiNobPHeSDN_aNz4nP'
+                  ]}
+                  size="medium" />
           </div>
       </div>
     );

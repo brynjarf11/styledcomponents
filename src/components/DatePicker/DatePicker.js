@@ -52,7 +52,7 @@ class DatePicker extends React.Component {
             numberOfDays = 31;
         }
         else if(m === "april" || m === "june" || m === "september" || m === "november"){
-            numberOfDays = 31;
+            numberOfDays = 30;
         }
         else{
             let y = this.state.year;
@@ -111,7 +111,6 @@ class DatePicker extends React.Component {
         year = year-1;
         this.setState({ year: year });
     }
-
 
     render() {
         const { showDays, showMonths, days, months, year } = this.state;

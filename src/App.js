@@ -6,6 +6,7 @@ import TimePicker from "./components/TimePicker/TimePicker";
 import DatePicker from "./components/DatePicker/DatePicker";
 import Row from './components/Row/Row';
 import Col from './components/Column/Col';
+import CartoonNetworkSpinner from "./components/CartoonNetworkSpinner/CartoonNetworkSpinner";
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -78,9 +79,13 @@ class App extends React.Component {
           <Row>
               <Col size={4}>Column1</Col>
               <Col size={8}>Column2</Col>
-
-
           </Row>
+
+          <div>
+              <h3>CartoonNetworkSpinner</h3>
+              <CartoonNetworkSpinner
+                interval={4} />
+          </div>
       </div>
     );
   }

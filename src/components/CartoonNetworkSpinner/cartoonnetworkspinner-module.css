@@ -1,0 +1,10 @@
+.image {
+    width: 200px;
+}
+.rotate {
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin{
+    100% { transform: rotate(360deg); }
+}

@@ -3,11 +3,15 @@ import Modal from './components/Modal/Modal';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import NameCard from "./components/NameCard/NameCard";
 import TimePicker from "./components/TimePicker/TimePicker";
+import Carousel from './components/Carousel/Carousel';
+
+import DatePicker from "./components/DatePicker/DatePicker";
 import Row from './components/Row/Row';
 import Col from './components/Column/Col';
 import Tabs from './components/Tabs/Tabs';
 import Styles from './components/Tabs/Tabs.module.css'
 import Tab from "./components/Tab/Tab";
+import CartoonNetworkSpinner from "./components/CartoonNetworkSpinner/CartoonNetworkSpinner";
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -68,7 +72,23 @@ class App extends React.Component {
                   onTimePick={time => this.setState({ time })}
                   format={12} />
           </div>
-
+          <div>
+              <h2>Carousel</h2>
+              <Carousel
+                  images={[
+                      'https://i.pinimg.com/236x/fc/7a/b1/fc7ab1608bcedab667a6b1e718e5546b--beautiful-men-beautiful-people.jpg',
+                      'https://pbs.twimg.com/media/Cnbc-ZeVMAAxuTg.jpg',
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc3O0vNCuKIwPe08IuiYWciZkLOB-5_va3fJjxvjrFN7E4jCLLHQ',
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC4LM0motrDIVjSxb3Fd5LfL5kjVlTZWuiNobPHeSDN_aNz4nP'
+                  ]}
+                  size="medium" />
+          </div>
+          <div>
+              <h2>DatePicker</h2>
+              <DatePicker
+                  onDatePick={date => this.setState({ date })}
+                  locale="en-EN" />
+          </div>
           <Row>
               <Col size={4}>Column1</Col>
               <Col size={4}>Column2</Col>
@@ -77,8 +97,6 @@ class App extends React.Component {
           <Row>
               <Col size={4}>Column1</Col>
               <Col size={8}>Column2</Col>
-
-
           </Row>
           <div>
               <h2>Tabs</h2>
@@ -102,6 +120,14 @@ class App extends React.Component {
                   <Tab title='Tab 4'selectionKey={8}>
                   </Tab>
               </Tabs>
+          </div>
+
+
+          <div>
+              <h3>CartoonNetworkSpinner</h3>
+              <CartoonNetworkSpinner
+                interval={5} />
+
           </div>
       </div>
     );
